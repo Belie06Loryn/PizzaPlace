@@ -1,0 +1,54 @@
+   /*small devices */
+   @media only screen and (max-width: 600px) {
+}
+  /* portrait tablets and large phones */
+@media only screen and (min-width: 600px) {
+} 
+  /* Medium devices */
+@media only screen and (min-width: 768px) {
+} 
+  /* Large devices */
+@media only screen and (min-width: 992px) {
+}  
+  /* Extra large devices */
+@media only screen and (min-width: 1200px) {
+}
+#div1{
+    background-color: white;
+}
+.image{
+    height: 400px;
+    width: 83%;
+    position: absolute;
+}
+.imaje {
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    height: 380px;
+    width: 98%;
+    text-align: center;
+    font-family: cursive; 
+}
+h2{
+    text-align: center;
+    font-family: cursive; 
+    color: rgb(42, 165, 48);
+}
+
+
+
+
+
+
+
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 11px;
+}
