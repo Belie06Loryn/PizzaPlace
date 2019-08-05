@@ -51,6 +51,9 @@ select , input[type=number]{
 #orde{
     display: none;
 }
+#delivery{
+    display: none;
+}
 
 
 

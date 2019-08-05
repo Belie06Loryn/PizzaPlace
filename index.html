@@ -33,9 +33,9 @@
         </div>
         <div class="container">
             <div class="col-md-4 col-lg-4" id="ima">
-                <a href="#orde"><img src="Images/b36036a54e1cf9c084f4b702a63e5a08f1e98983.webp" class="piza"></a><p class="pizas">Small: <strong>7$</strong></p>
-                <a href="#orde"><img src="Images/bb988e5f25f4e44e52be001ffbaafe2c.jpg" class="piza"></a><p class="pizas">Medium: <strong>12$</strong></p>
-                <a href="#orde"><img src="Images/Gourmet_Veggie.png" class="piza"></a><p class="pizas">Large: <strong>17$</strong></p>
+                <a href="#orde"><img src="Images/b36036a54e1cf9c084f4b702a63e5a08f1e98983.webp" class="piza"></a><p class="pizas">Small: <strong>5$</strong></p>
+                <a href="#orde"><img src="Images/bb988e5f25f4e44e52be001ffbaafe2c.jpg" class="piza"></a><p class="pizas">Medium: <strong>9$</strong></p>
+                <a href="#orde"><img src="Images/Gourmet_Veggie.png" class="piza"></a><p class="pizas">Large: <strong>13$</strong></p>
             </div> 
             <div class="col-md-4 col-lg-4"></div>
             <div class="col-md-4 col-lg-4">
@@ -83,36 +83,39 @@
                    <form action="" method="post">
                         <div class="field">
                             <label for="psise">Pizza Size: </label><br>
-                            <select id="size" required>
-                            <option class="form-control" value="Large" >Large</option>
-                            <option class="form-control" value="Medium">Medium</option>
-                            <option class="form-control" value="Small" selected>Small</option>
+                            <select id="size" placeholder="Size">
+                                <option class="form-control"></option>
+                                <option class="form-control" value="Large" >Large</option>
+                                <option class="form-control" value="Medium">Medium</option>
+                                <option class="form-control" value="Small">Small</option>
                             </select>
                         </div>
                         <div class="field">
                             <label for="crust">Pizza Crust: </label><br>
-                            <select id="crust" required>
-                            <option class="form-control" value="Thin Crust" selected>Thin Crust</option>
-                            <option class="form-control" value="Thick Crust">Thick Crust</option>
-                            <option class="form-control" value="Flatbread Crust">Flatbread Crust</option>
-                            <option class="form-control" value="Focaccia Crust">Focaccia Crust</option>
-                            <option class="form-control" value="Custom Crust">Custom Crust</option>
-                            <option class="form-control" value="Astoria Rising Crust">Astoria Rising Crust</option>
-                            <option class="form-control" value="Authentic Wood Fired Crust">Authentic Wood Fired Crust</option>
+                            <select id="crust" placeholder="Crust">
+                                <option class="form-control"></option>
+                                <option class="form-control" value="Thin Crust">Thin Crust</option>
+                                <option class="form-control" value="Thick Crust">Thick Crust</option>
+                                <option class="form-control" value="Flatbread Crust">Flatbread Crust</option>
+                                <option class="form-control" value="Focaccia Crust">Focaccia Crust</option>
+                                <option class="form-control" value="Custom Crust">Custom Crust</option>
+                                <option class="form-control" value="Astoria Rising Crust">Astoria Rising Crust</option>
+                                <option class="form-control" value="Authentic Wood Fired Crust">Authentic Wood Fired Crust</option>
                             </select>
                         </div>
                         <div class="field">
                             <label for="toppi">Toppings: </label><br>
-                            <select id="toppi" required>
-                            <option class="form-control" value="BBQ chicken, bacon, sweetcorn, onion" selected>BBQ chicken, bacon, sweetcorn, onion</option>
-                            <option class="form-control" value="Bacon, pineapple">Bacon, pineapple</option>
-                            <option class="form-control" value="Marinated tikka chicken, green pepper, onions">Marinated tikka chicken, green pepper, onions</option>
-                            <option class="form-control" value="Marinated barbeque steak">Marinated barbeque steak</option>
-                            <option class="form-control" value="Tomatoes, green pepper, pineapple, onions, mushroom, chicken BBQ">Tomatoes, green pepper, pineapple, onions, mushroom, chicken BBQ</option>
-                            <option class="form-control" value="Tomato, green pepper, onions, pineapple, mushroom">Tomato, green pepper, onions, pineapple, mushroom</option>
-                            <option class="form-control" value="Tomatoes, onions, green pepper, black olive, pepperoni, ham, mushroom">Tomatoes, onions, green pepper, black olive, pepperoni, ham, mushroom</option>
-                            <option class="form-control" value="Pepperoni, bacon, beef, ham">Pepperoni, bacon, beef, ham</option>
-                            <option class="form-control" value="Marinated peri-peri chicken">Marinated peri-peri chicken</option>
+                            <select id="toppi" placeholder="Toppings">
+                                <option class="form-control" ></option>
+                                <option class="form-control" value="BBQ chicken, bacon, sweetcorn, onion">BBQ chicken, bacon, sweetcorn, onion</option>
+                                <option class="form-control" value="Bacon, pineapple">Bacon, pineapple</option>
+                                <option class="form-control" value="Marinated tikka chicken, green pepper, onions">Marinated tikka chicken, green pepper, onions</option>
+                                <option class="form-control" value="Marinated barbeque steak">Marinated barbeque steak</option>
+                                <option class="form-control" value="Tomatoes, green pepper, pineapple, onions, mushroom, chicken BBQ">Tomatoes, green pepper, pineapple, onions, mushroom, chicken BBQ</option>
+                                <option class="form-control" value="Tomato, green pepper, onions, pineapple, mushroom">Tomato, green pepper, onions, pineapple, mushroom</option>
+                                <option class="form-control" value="Tomatoes, onions, green pepper, black olive, pepperoni, ham, mushroom">Tomatoes, onions, green pepper, black olive, pepperoni, ham, mushroom</option>
+                                <option class="form-control" value="Pepperoni, bacon, beef, ham">Pepperoni, bacon, beef, ham</option>
+                                <option class="form-control" value="Marinated peri-peri chicken">Marinated peri-peri chicken</option>
                             </select>
                         </div>
                         <div class="field">
@@ -123,9 +126,12 @@
                     </form>
             </div>
             <div class="col-md-5 col-lg-5" id="ordere">
-                   
+              
+                <button id="delivery" type="button" class="btn btn-success" style="text-align: center;">Delivery</button>
             </div>   
-        </div><hr style="margin: 30px 30px;">
+        </div>
+        
+        <hr style="margin: 30px 30px;">
         <div class="container" style="background-color: black;"><br>
                 <form>
                     <div class="row">
@@ -142,7 +148,7 @@
                         </div>   
                         </div><br><br>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4" style="color:rgb(175, 170, 170);">
                             <h3>BEACHES AREA</h3>
                             If you’re in the surrounding beaches area, we offer home delivery through Doorstep <br> Delivery. Call Doorstep Delivery at (+250) 788-234-865 or visit their website at: http://pizzeriaoliva.doorstepdelivery.com
                         </div>
