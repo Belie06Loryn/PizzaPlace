@@ -5,7 +5,7 @@ function Order(size, crust, toppi, quanti) {
   this.quantity = quanti;
 }
 Order.prototype.piza = function() {
-    return "Your Order : Size*" + this.pizzaSize + "/ Crust*" + this.pizzaCrust + "/ Toppings*" + this.topping + "/ Quantity*" + this.quantity 
+    return "Your Order // Size:" + this.pizzaSize + ", Crust:" + this.pizzaCrust + ", Toppings:" + this.topping + ", Quantity:" + this.quantity 
   };
 var pizza=[];
 function addOrder() {
@@ -23,7 +23,8 @@ function addOrder() {
   //pizza.push(newOrder);
 
   if (newOrder.pizzaSize != undefined) {
-    alert( newOrder.piza()+ ' Successfuly.');
+    $("div#ordere").append("<p>" + newOrder.piza() + "</p>");
+    $("div#ordere").append("<p>" + " The Total price is " + + "$" + "</p>");
   } else {
     alert('No order added');
   }
