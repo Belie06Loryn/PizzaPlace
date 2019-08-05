@@ -54,3 +54,10 @@ function addOrder() {
     }
   }*/
 document.getElementById('order').addEventListener('click', addOrder);
+$(document).ready(function(){
+    $("#ima").click(function(){
+      $("#orde").toggle();
+      $("#ima").show();
+      $("#orde").show();
+    });
+});
