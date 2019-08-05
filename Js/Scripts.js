@@ -61,3 +61,11 @@ $(document).ready(function(){
       $("#orde").show();
     });
 });
+$(document).ready(function(){
+    $("#mybutton").click(function(messag){
+      var name = document.getElementById("name").value;
+      var messaje = document.getElementById("mybutton").value;{
+        alert(name +' '+ "We Have Recieved Your Message!");
+      }
+    });
+  });
