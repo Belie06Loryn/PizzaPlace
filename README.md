@@ -3,7 +3,8 @@
 #### By MANIRAKORA Alexie
 ### Author
 https://github.com/Belie06Loryn
-
+## Description
+This is a website that helps you to order any Pizza you want with any size,crust,toppings according to your wish and We deliver your Pizza to your Place. 
 ## Setup/Installation Requirements
 * GitHub Account
 * Terminal in Lunix or CMD in Windows PC
