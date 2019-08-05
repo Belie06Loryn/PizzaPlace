@@ -9,7 +9,12 @@ https://github.com/Belie06Loryn
 * Terminal in Lunix or CMD in Windows PC
 * Any Browser
 * Visual Studio Code 
-
+### BDD
+Story: To Order 
+** Select Pizza Size
+** Select Pizza Crust
+** Select Toppings
+** Select Quantity
 ## Known Bugs
 No Bugs
 ## Technologies Used
