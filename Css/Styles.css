@@ -48,6 +48,9 @@ select , input[type=number]{
   border: none;
  
 }
+#orde{
+    display: none;
+}
 
 
 

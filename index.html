@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Css/Styles.css">
-    
+   
 </head>
 <body>
     <div class="jumbotron" id="div1">
@@ -30,19 +31,55 @@
                 <img src="Images/5536.jpg"  style="width: 400px; height:250px;" >
             </div>
         </div>
-        <div class="container" >
-            <div class="col-md-3 col-lg-3">
-                   <img src="Images/b36036a54e1cf9c084f4b702a63e5a08f1e98983.webp" class="piza"><p class="pizas">Small: <strong>7$</strong></p>
-                   <img src="Images/bb988e5f25f4e44e52be001ffbaafe2c.jpg" class="piza"><p class="pizas">Medium: <strong>12$</strong></p>
-                   <img src="Images/Gourmet_Veggie.png" class="piza"><p class="pizas">Large: <strong>17$</strong></p>  
+        <div class="container">
+            <div class="col-md-4 col-lg-4" id="ima">
+                <a href="#orde"><img src="Images/b36036a54e1cf9c084f4b702a63e5a08f1e98983.webp" class="piza"></a><p class="pizas">Small: <strong>7$</strong></p>
+                <a href="#orde"><img src="Images/bb988e5f25f4e44e52be001ffbaafe2c.jpg" class="piza"></a><p class="pizas">Medium: <strong>12$</strong></p>
+                <a href="#orde"><img src="Images/Gourmet_Veggie.png" class="piza"></a><p class="pizas">Large: <strong>17$</strong></p>
+            </div> 
+            
+        </div>
+
+        <div class="container" style="background-color: rgb(178, 252, 94);">
+            <h3 style="text-align: center;">Includes salad and garlic bread</h3>
+            <div class="col-md-2 col-lg-2">
+                <h6>TUESDAY</h6>
+                <p>Spaghetti $8 <br>
+                    Spaghetti with meat sauce or marinara</p>   
             </div>
+            <div class="col-md-2 col-lg-2">
+                <h6>TUESDAY IS KIDS DAY</h6>
+                <p> MAKE YOUR OWN PIZZA <br>AND DRINK $5 ALL DAY!</p>  
+            </div>
+            <div class="col-md-2 col-lg-2">
+                <h6>WEDNESDAY</h6>
+                <p> Lasagna $9 <br>
+                Your pick of our classic beef or veggie</p>
+            </div>   
+            <div class="col-md-2 col-lg-2">
+                <h6>THURSDAY</h6>
+                <p> Baked Ziti $9 <br>
+                Baked ziti (sausage or meatball)</p>
+            </div> 
+            <div class="col-md-2 col-lg-2">
+                <h6>FRIDAY</h6>
+                <p> Pasta Combo $12 <br>
+                Lasagna, baked ziti and manicotti</p>
+            </div>      
+            <div class="col-md-2 col-lg-2">
+                <h6>TUESDAY - THURSDAY</h6>
+                <p>Pizza $10: 14" hand-tossed with 1 regular topping</p>
+            </div> 
+        </div>
+        <div class="container" id="orde">
+            <div class="col-md-5 col-lg-5"></div>
             <h1>Drop Your Order Here </h1>
             <div class="col-md-6 col-lg-6" style="background-color: rgb(188, 248, 132);">
                 <h3>Your Order :</h3>
                    <form action="" method="post">
                         <div class="field">
                             <label for="psise">Pizza Size: </label><br>
-                            <select id="size">
+                            <select id="size" required>
                             <option class="form-control" value="17" >Large</option>
                             <option class="form-control" value="12">Medium</option>
                             <option class="form-control" value="7" selected>Small</option>
@@ -50,7 +87,7 @@
                         </div>
                         <div class="field">
                             <label for="crust">Pizza Crust: </label><br>
-                            <select id="crust">
+                            <select id="crust" required>
                             <option class="form-control" value="2" selected>Thin Crust</option>
                             <option class="form-control" value="3">Thick Crust</option>
                             <option class="form-control" value="4">Flatbread Crust</option>
@@ -62,7 +99,7 @@
                         </div>
                         <div class="field">
                             <label for="toppi">Toppings: </label><br>
-                            <select id="toppi">
+                            <select id="toppi" required>
                             <option class="form-control" value="5" selected>BBQ chicken, bacon, sweetcorn, onion</option>
                             <option class="form-control" value="2">Bacon, pineapple</option>
                             <option class="form-control" value="4">Marinated tikka chicken, green pepper, onions</option>
@@ -76,12 +113,12 @@
                         </div>
                         <div class="field">
                             <label for="qty">Quantity: </label><br>
-                            <input type="number" class="form-control" id="quanti" cols="3" rows="2" placeholder="...">
+                            <input type="number" class="form-control" id="quanti" cols="3" rows="2" placeholder="..." required>
                         </div>
                         <button id="order" type="button" class="btn btn-success" style="float:right;">Order</button>
                     </form>
             </div>
-            <div class="col-md-3 col-lg-3" id="ordere">
+            <div class="col-md-1 col-lg-1" id="ordere">
                    
             </div>   
         </div>
@@ -89,7 +126,7 @@
     <div class="footer">
         <footer>Pizzeria Oliva <br>2019</footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="Js/Scripts.js"></script>
 </body>

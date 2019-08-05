@@ -24,7 +24,7 @@ function addOrder() {
   };
 
   if (newOrder.pizzaSize != undefined) {
-    alert(+ newOrder.piza()+ '$' + ' Successfuly.');
+    alert( newOrder.piza()+ '$' + ' Successfuly.');
   } else {
     alert('No order added');
   }
