@@ -54,11 +54,13 @@ select , input[type=number]{
 #delivery{
     display: none;
 }
-
-
-
-
-
+.imag{
+    margin-bottom: 18px;
+    margin-top: 18px;
+    height: 200px;
+    width: 280px;
+    position: relative;
+}
 
 
 
