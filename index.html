@@ -12,7 +12,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Css/Styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Condensed&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div class="jumbotron" id="div1">
@@ -42,46 +42,48 @@
                    <form action="" method="post">
                         <div class="field">
                             <label for="psise">Pizza Size: </label><br>
-                            <select class="mdb-select md-form">
-                            <option class="form-control" value="round" >Large</option>
-                            <option class="form-control" value="medium">Medium</option>
-                            <option class="form-control" value="small" selected>Small</option>
+                            <select id="size">
+                            <option class="form-control" value="17" >Large</option>
+                            <option class="form-control" value="12">Medium</option>
+                            <option class="form-control" value="7" selected>Small</option>
                             </select>
                         </div>
                         <div class="field">
                             <label for="crust">Pizza Crust: </label><br>
-                            <select>
-                            <option class="form-control" value="cr1" selected>Thin Crust</option>
-                            <option class="form-control" value="cr2">Thick Crust</option>
-                            <option class="form-control" value="cr3">Flatbread Crust</option>
-                            <option class="form-control" value="cr4">Focaccia Crust</option>
-                            <option class="form-control" value="cr5">Custom Crust</option>
-                            <option class="form-control" value="cr6">Astoria Rising Crust</option>
-                            <option class="form-control" value="cr7">Authentic Wood Fired Crust</option>
+                            <select id="crust">
+                            <option class="form-control" value="2" selected>Thin Crust</option>
+                            <option class="form-control" value="3">Thick Crust</option>
+                            <option class="form-control" value="4">Flatbread Crust</option>
+                            <option class="form-control" value="5">Focaccia Crust</option>
+                            <option class="form-control" value="3">Custom Crust</option>
+                            <option class="form-control" value="4">Astoria Rising Crust</option>
+                            <option class="form-control" value="2">Authentic Wood Fired Crust</option>
                             </select>
                         </div>
                         <div class="field">
                             <label for="toppi">Toppings: </label><br>
-                            <select>
-                            <option class="form-control" value="to1" selected>BBQ chicken, bacon, sweetcorn, onion</option>
-                            <option class="form-control" value="to2">Bacon, pineapple</option>
-                            <option class="form-control" value="to3">Marinated tikka chicken, green pepper, onions</option>
-                            <option class="form-control" value="to4">Marinated barbeque steak</option>
-                            <option class="form-control" value="to5">Tomatoes, green pepper, pineapple, onions, mushroom, chicken BBQ</option>
-                            <option class="form-control" value="to6">Tomato, green pepper, onions, pineapple, mushroom</option>
-                            <option class="form-control" value="to7">Tomatoes, onions, green pepper, black olive, pepperoni, ham, mushroom</option>
-                            <option class="form-control" value="to8">Pepperoni, bacon, beef, ham</option>
-                            <option class="form-control" value="to9">Marinated peri-peri chicken</option>
+                            <select id="toppi">
+                            <option class="form-control" value="5" selected>BBQ chicken, bacon, sweetcorn, onion</option>
+                            <option class="form-control" value="2">Bacon, pineapple</option>
+                            <option class="form-control" value="4">Marinated tikka chicken, green pepper, onions</option>
+                            <option class="form-control" value="3">Marinated barbeque steak</option>
+                            <option class="form-control" value="6">Tomatoes, green pepper, pineapple, onions, mushroom, chicken BBQ</option>
+                            <option class="form-control" value="5">Tomato, green pepper, onions, pineapple, mushroom</option>
+                            <option class="form-control" value="6">Tomatoes, onions, green pepper, black olive, pepperoni, ham, mushroom</option>
+                            <option class="form-control" value="3">Pepperoni, bacon, beef, ham</option>
+                            <option class="form-control" value="4">Marinated peri-peri chicken</option>
                             </select>
                         </div>
                         <div class="field">
                             <label for="qty">Quantity: </label><br>
-                            <input type="number" class="form-control" id="qty" cols="3" rows="2" placeholder="...">
+                            <input type="number" class="form-control" id="quanti" cols="3" rows="2" placeholder="...">
                         </div>
                         <button id="order" type="button" class="btn btn-success" style="float:right;">Order</button>
                     </form>
             </div>
-            <div class="col-md-3 col-lg-3"></div>   
+            <div class="col-md-3 col-lg-3" id="ordere">
+                   
+            </div>   
         </div>
     </div>
     <div class="footer">
