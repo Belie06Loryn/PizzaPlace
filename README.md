@@ -10,6 +10,11 @@ This is a website that helps you to order any Pizza you want with any size,crust
 * Terminal in Lunix or CMD in Windows PC
 * Any Browser
 * Visual Studio Code 
+## Project setup instructions
+To start using this project use the following commands:
+* Ctrl + Shift + T   /  Windows + R
+* git clone https://github.com/Belie06Loryn/PizzaPlace.git
+* code . :  (this is if Visual Studio Code is your preferred text editor)
 ### BDD
 Story: To Order 
 ** Select Pizza Size
