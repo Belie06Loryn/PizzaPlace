@@ -17,10 +17,11 @@ To start using this project use the following commands:
 * code . :  (this is if Visual Studio Code is your preferred text editor)
 ### BDD
 Story: To Order 
-** Select Pizza Size
-** Select Pizza Crust
-** Select Toppings
-** Select Quantity
+* Click on Pizza Image To get the Order Form
+* Select Pizza Size
+* Select Pizza Crust
+* Select Toppings
+* Select Quantity
 ## Known Bugs
 No Bugs
 ## Technologies Used
